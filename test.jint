@@ -1,0 +1,9 @@
+func, correctpass=print, password is correct; DECLARE FUNC
+func, wrongpass=print, password is incorrect;
+input, password: ; MAKE AN INPUT CALLED 'password'
+getinput, pass; GET THE INPUT DATA FROM PREV INPUT AND STORE IN 'pass'
+cmp, $pass; SET COMPARE VALUE TO VARIABLE 'pass'
+var, corpass=acul1213; MAKE VARIABLE 'corpass' = 'acul1213'
+if, $corpass:correctpass; CHECKS IF COMPARE VALUE IS = VARIABLE 'corpass' IF IT IS IT RUNS FUNC 'correctpass'
+cmp, $cmpret;
+if, 0:wrongpass;
